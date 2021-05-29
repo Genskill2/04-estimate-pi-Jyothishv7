@@ -26,16 +26,17 @@ int main(void) {
 
 float wallis_pi(int n)
   {
-    int i = 1;
-    double val;
-    double tot ;
-    while (i <= n)
+    int a = 1;
+    float val=1.0;
+    float tot=1.0 ;
+    while (a<= n)
 	  {
-        val = ((4 * i * i) / ((4 * i * i) - 1));
+        val = ((4.0 * a * a) / ((4.0 * a* a) - 1));
         tot = tot*val;
-        i++;
+        a++ ;
 	  }
-    return 2*tot;
+	tot=2.0*tot;
+    return tot;
 
   }
   
