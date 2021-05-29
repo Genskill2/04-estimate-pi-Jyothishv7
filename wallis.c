@@ -24,3 +24,18 @@ int main(void) {
   }
 }
 
+float wallis_pi(int n)
+  {
+    int i = 1;
+    float val;
+    float tot ;
+    while (i <= n)
+	  {
+        val = ((4 * i * i) / ((4 * i * i) - 1));
+        tot = tot*val;
+        i = i + 1;
+	  }
+    return 2*tot;
+
+  }
+  
