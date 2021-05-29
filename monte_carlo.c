@@ -42,21 +42,23 @@ int main(void) {
 float mc_pi(int n)
   {
     int i=1;
-    int inspoint = 0;
-    double x,y,val,distance;
+    float inspoint = 0;
+    float x,y,val,distance;
 	
     while (i<=n)
 	  {
         x= frandom();
         y= frandom();
+        //printf("%f\n",x);
+        //printf("%f\n",y);
         distance = sqrt((x*x) + (y*y));
         if (distance<1)
-            inspoint = inspoint+1;
-        i = i + 1;
+            inspoint++;
+        i++;
 	  }
-    val=4*(inspoint/n);
+	  
+    val=4.0*(inspoint/n);
+    //printf("%f\n",val);
     return val;
   }
-
-
 
