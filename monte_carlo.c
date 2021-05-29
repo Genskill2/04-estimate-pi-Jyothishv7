@@ -39,5 +39,24 @@ int main(void) {
   }
 }
 
+float mc_pi(int n)
+  {
+    int i=1;
+    int inspoint = 0;
+	  float x,y,val,distance;
+	
+    while (i<=n)
+	  {
+        x= frandom();
+        y= frandom();
+        distance = sqrt((x*x) + (y*y));
+        if (distance<1)
+            inspoint = inspoint+1;
+        i = i + 1;
+	  }
+    val=4*(inspoint/n);
+    return val;
+  }
+
 
 
