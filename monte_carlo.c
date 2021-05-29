@@ -42,7 +42,7 @@ int main(void) {
 float mc_pi(int n)
   {
     int i=1;
-    int inspoint = 0;
+    float inspoint = 0;
     float x,y,val,distance;
 	
     while (i<=n)
