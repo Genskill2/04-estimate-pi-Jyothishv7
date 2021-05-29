@@ -57,7 +57,7 @@ float mc_pi(int n)
         i++;
 	  }
 	  
-    val=4.0*(inspoint/n);
+    val=4*(inspoint/n);
     //printf("%f\n",val);
     return val;
   }
